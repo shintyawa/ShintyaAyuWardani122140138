@@ -1,0 +1,213 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #d32f2f; /* Red color for headings */
+}
+
+/* Container for all content */
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields and buttons */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d32f2f; /* Red border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #b71c1c; /* Darker red when focused */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f; /* Red background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b71c1c; /* Darker red when hovered */
+}
+
+/* Modal styles */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#confirmation-modal, #edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#confirmation-modal .modal-content, #edit-modal .modal-content {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#confirmation-message {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Error messages */
+.error-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="number"],
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Global Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+/* Table Header Styles */
+table thead tr {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+/* Zebra Striping for Rows */
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect for Rows */
+table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Action Button Styles */
+button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    table thead {
+        display: none; /* Hide table header for small screens */
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
