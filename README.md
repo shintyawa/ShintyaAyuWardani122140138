@@ -33,8 +33,9 @@ Berikut tampilan data yang tersimpan :
 # State Management
 Untuk mengelola state management menggunakan cookie :
 Pada gambar di bawah ini adalah management cookie ketika menggunakan login :
+![Screenshot (436)](https://github.com/user-attachments/assets/8ea8cd82-a7ea-46d5-a912-ecd5be3568d9)
 
-Pada gambar di bawah ini adalah management cookie ketika menggunakan logout :
+
 
 Berikut management session :
 ![image](https://github.com/user-attachments/assets/ea33b182-9305-48ba-b9e4-8e8fe39d0f32)
